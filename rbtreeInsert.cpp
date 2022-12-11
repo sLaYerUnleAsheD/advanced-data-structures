@@ -123,7 +123,7 @@ void RBTree::fix(Node *&root, Node *&pt)
                 // appropriate rotation required
                 if (pt == parent_pt->left)
                 {
-                    // left rotation required
+                    // right rotation required
                     rotateRight(root, parent_pt);
                     pt = parent_pt;
                     parent_pt = pt->parent;
